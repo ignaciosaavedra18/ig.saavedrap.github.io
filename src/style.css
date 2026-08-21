@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+
+.contacto {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: white;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.contacto-header {
+    background-color: #16b3bf;
+    color: white;
+
+    padding: 45px;
+    text-align: center;
+}
+
+.contacto-header h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.contacto-header p {
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.contacto-header span {
+    display: inline-block;
+    margin-top: 15px;
+
+    font-family: 'Roboto Slab', serif;
+    font-style: italic;
+    font-size: 20px;
+}
+
+
+/* =========================
+   CONTENIDO
+========================= */
+
+.contacto-contenido {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+
+/* INFORMACIÓN */
+
+.informacion-contacto {
+    padding: 40px;
+    background-color: #fafafa;
+}
+
+.informacion-contacto h2 {
+    color: #16aebc;
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.informacion-contacto > p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+
+.dato-contacto {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+.dato-contacto > span {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #16b3bf;
+    color: white;
+
+    font-size: 18px;
+}
+
+.dato-contacto strong {
+    color: #333333;
+    font-size: 14px;
+}
+
+.dato-contacto p {
+    font-size: 13px;
+    color: #666666;
+}
+
+
+/* =========================
+   FORMULARIO
+========================= */
+
+.formulario {
+    padding: 40px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 7px;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #dddddd;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+
+.campo input:focus,
+.campo textarea:focus {
+    border-color: #16b3bf;
+}
+
+
+/* BOTÓN */
+
+.formulario button {
+    border: none;
+
+    background-color: #16b3bf;
+    color: white;
+
+    padding: 12px 25px;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #128e98;
+}
+
+
+/* VOLVER */
+
+.volver {
+    display: inline-block;
+
+    margin-left: 15px;
+
+    color: #16aebc;
+
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+.volver:hover {
+    text-decoration: underline;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+
+    border-top: 1px solid #eeeeee;
+
+    padding: 20px;
+
+    color: #777777;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 750px) {
+
+    .contacto {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    .contacto-contenido {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-header {
+        padding: 35px 20px;
+    }
+
+    .contacto-header h1 {
+        font-size: 28px;
+    }
+
+    .informacion-contacto,
+    .formulario {
+        padding: 25px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .formulario button {
+        width: 100%;
+    }
+
+    .volver {
+        display: block;
+        margin: 15px 0 0;
+        text-align: center;
+    }
+
+}

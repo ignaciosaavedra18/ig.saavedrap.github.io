@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.5;
+}
+
+
+/* CONTENEDOR PRINCIPAL */
+
+.portafolio {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+.header {
+    min-height: 260px;
+    display: grid;
+    grid-template-columns: 1fr 220px 1fr;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* INFORMACIÓN IZQUIERDA */
+
+.datos-personales {
+    background-color: #18b5c2;
+    color: white;
+    height: 220px;
+    padding: 30px 35px;
+
+    border-radius: 0 120px 120px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+.dato {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icono {
+    font-size: 22px;
+    width: 30px;
+}
+
+.dato strong {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* FOTO */
+
+.foto-contenedor {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background-color: white;
+
+    border: 7px solid white;
+
+    box-shadow:
+        0 0 0 2px #eeeeee,
+        0 5px 20px rgba(0, 0, 0, 0.12);
+
+    overflow: hidden;
+
+    position: relative;
+    z-index: 5;
+
+    margin: auto;
+}
+
+.foto-contenedor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* PRESENTACIÓN */
+
+.presentacion {
+    padding: 20px 35px;
+}
+
+.presentacion h1 {
+    font-family: 'Roboto Slab', serif;
+    color: #16aebc;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.presentacion h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 21px;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 10px;
+    color: #333333;
+}
+
+.linea {
+    width: 100%;
+    height: 2px;
+    background-color: #eeeeee;
+    margin-top: 8px;
+}
+
+
+/* =========================
+   CONTENIDO
+========================= */
+
+.contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.columna {
+    padding: 10px 35px 30px;
+}
+
+.derecha {
+    background-color: #fafafa;
+}
+
+
+/* =========================
+   SECCIONES
+========================= */
+
+.seccion {
+    padding: 25px 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+.seccion:last-child {
+    border-bottom: none;
+}
+
+
+.titulo-seccion {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.seccion-icono {
+    color: #16b3bf;
+    font-size: 25px;
+    width: 28px;
+    text-align: center;
+}
+
+.titulo-seccion h3 {
+    color: #16aebc;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* TEXTOS */
+
+.seccion p {
+    font-size: 14px;
+    color: #444444;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   PROYECTOS
+========================= */
+
+.proyecto {
+    margin-bottom: 18px;
+    padding-left: 15px;
+    border-left: 3px solid #18b5c2;
+}
+
+.proyecto:last-child {
+    margin-bottom: 0;
+}
+
+.proyecto h4 {
+    color: #14aeba;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.proyecto p {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   INTERESES
+========================= */
+
+.intereses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.intereses ul {
+    list-style: none;
+}
+
+.intereses li {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.intereses li::before {
+    content: "›";
+    color: #16b3bf;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+
+/* =========================
+   HABILIDADES
+========================= */
+
+.habilidad {
+    margin-bottom: 17px;
+}
+
+.habilidad-nombre {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.habilidad-nombre span:last-child {
+    color: #16aebc;
+    font-size: 12px;
+}
+
+.barra {
+    width: 100%;
+    height: 10px;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progreso {
+    height: 100%;
+    background-color: #16b5c1;
+    border-radius: 10px;
+}
+
+
+/* NIVELES */
+
+.html {
+    width: 80%;
+}
+
+.css {
+    width: 75%;
+}
+
+.java {
+    width: 70%;
+}
+
+.javascript {
+    width: 60%;
+}
+
+.mysql {
+    width: 70%;
+}
+
+.spring {
+    width: 60%;
+}
+
+
+/* =========================
+   EDUCACIÓN
+========================= */
+
+.educacion {
+    margin-bottom: 20px;
+    padding-left: 18px;
+    position: relative;
+}
+
+.educacion::before {
+    content: "›";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #16b3bf;
+    font-size: 20px;
+}
+
+.educacion h4 {
+    font-size: 15px;
+    color: #333333;
+}
+
+.educacion p {
+    margin: 2px 0;
+    font-size: 13px;
+}
+
+.institucion {
+    color: #16aebc !important;
+    font-style: italic;
+}
+
+
+/* =========================
+   TECNOLOGÍAS
+========================= */
+
+.tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tecnologias span {
+    background-color: #16b3bf;
+    color: white;
+    padding: 7px 12px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+.boton-contacto {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 22px;
+
+    background-color: #16b3bf;
+    color: white;
+
+    text-decoration: none;
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+.boton-contacto:hover {
+    background-color: #128e98;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    text-align: center;
+    padding: 18px;
+    border-top: 1px solid #eeeeee;
+    color: #777777;
+    font-size: 12px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+    .header {
+        grid-template-columns: 1fr;
+        padding-bottom: 25px;
+    }
+
+    .datos-personales {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .foto-contenedor {
+        margin-top: -45px;
+        margin-bottom: 15px;
+    }
+
+    .presentacion {
+        text-align: center;
+    }
+
+    .contenido {
+        grid-template-columns: 1fr;
+    }
+
+    .derecha {
+        background-color: #fafafa;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .portafolio {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .columna {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .datos-personales {
+        width: 100%;
+        border-radius: 0 0 80px 0;
+        padding-left: 25px;
+    }
+
+    .presentacion h1 {
+        font-size: 26px;
+    }
+
+    .presentacion h2 {
+        font-size: 17px;
+    }
+
+    .intereses {
+        grid-template-columns: 1fr;
+    }
+
+}
